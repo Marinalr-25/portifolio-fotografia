@@ -5,13 +5,10 @@ const body = document.body;
 const casamento = document.querySelector('.casamento');
 const feminino = document.querySelector('.feminino');
 const infantil = document.querySelector('.infantil');
-const btnPrecoCasamento = document.getElementById('precoCasamento');
-const btnPrecoFeminino = document.getElementById('precoFeminino');
-const btnPrecoInfantil = document.getElementById('precoCrianca');
+const btnPrecoCasamento = document.getElementById('.precoCasamento');
+const btnPrecoFeminino = document.getElementById('.precoFeminino');
+const btnPrecoInfantil = document.getElementById('.precoInfantil');
 
-console.log(btnPrecoCasamento);
-console.log(btnPrecoFeminino);
-console.log(btnPrecoInfantil);
 // Função para definir o ícone, tema e a classe do botão ao carregar a página
 function setInitialTheme() {
   if (body.getAttribute('data-bs-theme') === 'dark') {
@@ -57,12 +54,7 @@ function cliquePreco(tabela, segTabela, terTabela) {
   terTabela.style.display = 'none';
 }
 
-btnPrecoCasamento.addEventListener('click', () => {
-  cliquePreco(casamento, feminino, infantil);
-});
-btnPrecoFeminino.addEventListener('click', () => {
-  cliquePreco(feminino, casamento, infantil);
-});
-btnPrecoInfantil.addEventListener('click', () => {
-  cliquePreco(infantil, feminino, casamento);
-});
+btnPrecoCasamento.addEventListener(
+  'click',
+  cliquePreco(casamento, feminino, infantil)
+);

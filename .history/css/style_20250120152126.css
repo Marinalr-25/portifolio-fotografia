@@ -140,8 +140,5 @@
   display: none;
 }
 .feminino {
-  display: none;
-}
-.infantil {
-  display: none;
+  display: block;
 }

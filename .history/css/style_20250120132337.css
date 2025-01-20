@@ -106,7 +106,7 @@
   height: 250px;
 }
 
-.cardServico {
+.card {
   height: 502px;
 }
 
@@ -134,14 +134,4 @@
 
 .menino {
   object-position: 50% 35%;
-}
-
-.casamento {
-  display: none;
-}
-.feminino {
-  display: none;
-}
-.infantil {
-  display: none;
 }

@@ -137,11 +137,8 @@
 }
 
 .casamento {
-  display: none;
+  display: block;
 }
-.feminino {
-  display: none;
-}
-.infantil {
-  display: none;
+.casamento {
+  display: block;
 }

@@ -57,12 +57,15 @@ function cliquePreco(tabela, segTabela, terTabela) {
   terTabela.style.display = 'none';
 }
 
-btnPrecoCasamento.addEventListener('click', () => {
-  cliquePreco(casamento, feminino, infantil);
-});
-btnPrecoFeminino.addEventListener('click', () => {
-  cliquePreco(feminino, casamento, infantil);
-});
-btnPrecoInfantil.addEventListener('click', () => {
-  cliquePreco(infantil, feminino, casamento);
-});
+btnPrecoCasamento.addEventListener(
+  'click',
+  cliquePreco(casamento, feminino, infantil)
+);
+btnPrecoFeminino.addEventListener(
+  'click',
+  cliquePreco(feminino, casamento, infantil)
+);
+btnPrecoInfantil.addEventListener(
+  'click',
+  cliquePreco(infantil, feminino, casamento)
+);
