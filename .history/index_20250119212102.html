@@ -48,16 +48,13 @@
 
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#home" class="nav-link" aria-current="page">Home</a>
+            <a href="#home" class="nav-link active" aria-current="page">Home</a>
           </li>
           <li class="nav-item">
             <a href="#galeria" class="nav-link">Galeria</a>
           </li>
           <li class="nav-item">
             <a href="#sobre" class="nav-link">Sobre mim</a>
-          </li>
-          <li class="nav-item">
-            <a href="#clientes" class="nav-link">Depoimentos</a>
           </li>
           <li class="nav-item">
             <a href="#servicos" class="nav-link">Serviços</a>
@@ -108,75 +105,62 @@
     </div>
 
     <!-- Galeria -->
-    <div id="galeria" class="container text-center col-xxl-8 px-4 py-5">
+    <div id="galeria" class="container col-xxl-8 px-4 py-5 p-4 text-center">
       <h1 class="fw-bold mb-3">Galeria</h1>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+      <div class="row p-3">
+        <div class="card col-lg-4 col-12 mb-4">
           <img
-            class="ensaio object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio1.jpg"
-            alt="ensaio 1"
+            src="src/casamento.webp"
+            class="card-img-top"
+            alt="ensaio fotografico de casamento"
           />
+          <div class="card-body">
+            <h5 class="card-title">Ensaio de Casamento</h5>
+            <p class="card-text">
+              Capturando cada momento especial e emoção do seu grande dia,
+              criando memórias que durarão para sempre.
+            </p>
+          </div>
         </div>
-        <div class="caixa col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card col-lg-4 col-12 mb-4">
           <img
-            class="ensaio object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio2.jpg"
-            alt="ensaio 1"
+            src="src/ensaiofotografico.jpeg"
+            class="card-img-top"
+            alt="ensaio fotografico de uma mulher"
           />
+          <div class="card-body">
+            <h5 class="card-title">Ensaio Fotográfico Feminino</h5>
+            <p class="card-text">
+              Explorando a beleza e a essência única em cada retrato, com um
+              toque artístico e elegante.
+            </p>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card col-lg-4 col-12 mb-4">
           <img
-            class="ensaio object-fit-cover border rounded img-thumbnail"
-            src="src/galeria-ensaio3.jpg"
-            alt="ensaio 1"
+            src="src/maquiagem.jpg"
+            class="card-img-top"
+            alt="ensaio fotografico de produto (maquiagem)"
           />
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-          <img
-            class="ensaio object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio4.jpg"
-            alt="ensaio 1"
-          />
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-          <img
-            class="ensaio object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio5.jpg"
-            alt="ensaio 1"
-          />
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-          <img
-            class="ensaio menino object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio6.jpg"
-            alt="ensaio 1"
-          />
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-          <img
-            class="ensaio object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio7.jpg"
-            alt="ensaio 1"
-          />
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-          <img
-            class="ensaio object-fit-cover img-thumbnail"
-            src="src/galeria-ensaio8.jpeg"
-            alt="ensaio 1"
-          />
+          <div class="card-body">
+            <h5 class="card-title">Fotografia de Produto - Maquiagem</h5>
+            <p class="card-text">
+              Realçando detalhes e cores vibrantes, perfeita para destacar a
+              qualidade dos seus produtos de beleza.
+            </p>
+          </div>
         </div>
       </div>
+      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+        Ver mais
+      </button>
     </div>
 
     <!-- Sobre mim -->
-    <div id="sobre" class="container px-4 py-5">
+    <div id="sobre" class="container col-xxl-8 px-4 py-5">
       <div class="row justify-content-center align-items-center">
         <h1 class="fw-bold mb-3 text-center">Sobre Mim</h1>
-        <div
-          class="row p-3 border border-2 d-flex justify-content-center align-items-center"
-        >
+        <div class="border border-end-0">
           <div class="col-lg-8 pe-3">
             <p class="lead">
               Olá! Meu nome é Luís, sou fotógrafo apaixonado por capturar a
@@ -209,7 +193,7 @@
     </div>
 
     <!-- Clientes -->
-    <div id="clientes" class="container col-xxl-8 px-4 py-5">
+    <div id="clientes" class="container col-xxl-8 px-4 py-5 py-3">
       <div class="col mx-auto">
         <h1 class="fw-bold text-center mb-5">Depoimentos</h1>
         <div class="row">
@@ -265,64 +249,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Servicos -->
-    <div id="servicos" class="container col-xxl-8 px-4 py-5 p-4 text-center">
-      <h1 class="fw-bold mb-3">Serviços</h1>
-      <div class="row g-3 mb-4">
-        <div class="col-lg-4 col-12">
-          <div class="card p-3 mb-2">
-            <img
-              src="src/casamento.webp"
-              class="card-img-top"
-              alt="ensaio fotografico de casamento"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Ensaio de Casamento</h5>
-              <p class="card-text">
-                Capturando cada momento especial e emoção do seu grande dia,
-                criando memórias que durarão para sempre.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12">
-          <div class="card p-3 mb-2">
-            <img
-              src="src/ensaiofotografico.jpeg"
-              class="card-img-top"
-              alt="ensaio fotografico de uma mulher"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Ensaio Fotográfico Feminino</h5>
-              <p class="card-text">
-                Explorando a beleza e a essência única em cada retrato, com um
-                toque artístico e elegante.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-12">
-          <div class="card p-3 mb-2">
-            <img
-              src="src/maquiagem.jpg"
-              class="card-img-top"
-              alt="ensaio fotografico de produto (maquiagem)"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Fotografia de Produto - Maquiagem</h5>
-              <p class="card-text">
-                Realçando detalhes e cores vibrantes, perfeita para destacar a
-                qualidade dos seus produtos de beleza.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-        Ver mais
-      </button>
     </div>
 
     <script

@@ -128,10 +128,6 @@
 
 /* Servicos */
 .ensaio {
-  width: 100%;
+  width: 80%;
   height: 250px;
-}
-
-.menino {
-  object-position: 50% 35%;
 }

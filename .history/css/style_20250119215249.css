@@ -80,7 +80,7 @@
 
 /* CSS próprio */
 #galeria,
-#sobre,
+#about,
 #clientes {
   scroll-margin-top: 50px;
 }
@@ -124,14 +124,4 @@
 /* Clientes */
 .estrela {
   color: #ffcc00;
-}
-
-/* Servicos */
-.ensaio {
-  width: 100%;
-  height: 250px;
-}
-
-.menino {
-  object-position: 50% 35%;
 }
