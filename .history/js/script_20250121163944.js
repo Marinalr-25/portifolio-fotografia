@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInitialTheme();
 
   toggleThemeBtn.addEventListener('click', () => {
-    const temaAtual = body.getAttribute('data-bs-theme');
+    const temaAtual = document.body.getAttribute('data-bs-theme');
     if (temaAtual === 'dark') {
       body.setAttribute('data-bs-theme', 'light');
       aplicarTemaClaro();

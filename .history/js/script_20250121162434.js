@@ -13,36 +13,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   body.setAttribute('data-bs-theme', temaSalvo);
 
-  function aplicarTemaEscuro() {
-    themeIcon.classList.replace('bi-brightness-high', 'bi-moon-stars-fill');
-    header.classList.replace('header-light', 'header-dark');
-    toggleThemeBtn.classList.replace('btn-light', 'btn-dark');
-  }
-  function aplicarTemaClaro() {
-    themeIcon.classList.replace('bi-moon-stars-fill', 'bi-brightness-high');
-    header.classList.replace('header-dark', 'header-light');
-    toggleThemeBtn.classList.replace('btn-dark', 'btn-light');
-  }
-
   function setInitialTheme() {
     if (temaSalvo === 'dark') {
-      aplicarTemaEscuro();
+      themeIcon.classList.replace('bi-brightness-high', 'bi-moon-stars-fill');
+      header.classList.replace('header-light', 'header-dark');
+      toggleThemeBtn.classList.replace('btn-light', 'btn-dark');
     } else {
-      aplicarTemaClaro();
+      themeIcon.classList.replace('bi-moon-stars-fill', 'bi-brightness-high');
+      header.classList.replace('header-dark', 'header-light');
+      toggleThemeBtn.classList.replace('btn-dark', 'btn-light');
     }
   }
 
   setInitialTheme();
 
   toggleThemeBtn.addEventListener('click', () => {
-    const temaAtual = body.getAttribute('data-bs-theme');
+    const temaAtual = document.body.getAttribute('data-bs-theme');
     if (temaAtual === 'dark') {
       body.setAttribute('data-bs-theme', 'light');
-      aplicarTemaClaro();
+      themeIcon.classList.replace('bi-moon-stars-fill', 'bi-brightness-high');
+      header.classList.replace('header-dark', 'header-light');
+      toggleThemeBtn.classList.replace('btn-dark', 'btn-light');
       localStorage.setItem('data-bs-theme', 'light');
     } else {
       body.setAttribute('data-bs-theme', 'dark');
-      aplicarTemaEscuro();
+      themeIcon.classList.replace('bi-brightness-high', 'bi-moon-stars-fill');
+      header.classList.replace('header-light', 'header-dark');
+      toggleThemeBtn.classList.replace('btn-light', 'btn-dark');
       localStorage.setItem('data-bs-theme', 'dark');
     }
   });

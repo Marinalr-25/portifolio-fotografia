@@ -82,8 +82,7 @@
 #galeria,
 #sobre,
 #clientes,
-#servicos,
-#contato {
+#servicos {
   scroll-margin-top: 70px;
 }
 /* Header */
@@ -150,22 +149,6 @@
 
 /* Formulario */
 
-form {
-  max-width: 450px;
-}
-
-@media (max-width: 567px) {
-  form {
-    max-width: 400px;
-  }
-}
-
 textarea {
   resize: none;
-}
-
-.bi-twitter,
-.bi-instagram,
-.bi-facebook {
-  cursor: pointer;
 }

@@ -164,8 +164,6 @@ textarea {
   resize: none;
 }
 
-.bi-twitter,
-.bi-instagram,
-.bi-facebook {
+.bi-twitter {
   cursor: pointer;
 }

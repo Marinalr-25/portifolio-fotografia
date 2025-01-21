@@ -163,9 +163,3 @@ form {
 textarea {
   resize: none;
 }
-
-.bi-twitter,
-.bi-instagram,
-.bi-facebook {
-  cursor: pointer;
-}
