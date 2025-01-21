@@ -97,6 +97,13 @@
   color: #fff;
 }
 
+.navbarconfig {
+  top: 0;
+  right: 0;
+  transform: translateX();
+  z-index: 999;
+}
+
 /* Hero */
 .img-hero {
   width: 1000px;

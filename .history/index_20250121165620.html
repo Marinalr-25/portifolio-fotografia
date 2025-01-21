@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- primeiro header -->
     <div class="container">
       <header
-        class="d-flex flex-wrap justify-content-between align-items-center p-3 border-bottom fixed-top header header-light"
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom fixed-top header header-light"
       >
         <a
           href="/"
@@ -43,58 +43,94 @@
               fill="currentColor"
             ></path>
           </svg>
-          <span class="fs-4">Fotógrafo Bootstrap</span>
+          <span class="fs-4">Fotográfo Bootstrap</span>
         </a>
 
-        <nav
-          class="navbar navbar-expand-lg bg-body-tertiary rounded position-absolute nav-bar"
-          style="top: 10%; right: 0; z-index: 1050"
-        >
-          <div
-            class="container-fluid d-flex justify-content-end align-items-center"
-          >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarsExample09"
-              aria-controls="navbarsExample09"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse text-center"
-              id="navbarsExample09"
-            >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#galeria">Galeria</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sobre">Sobre mim</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#clientes">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#servicos">Serviços</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contato">Contato</a>
-                </li>
-              </ul>
-              <button id="toggleThemeBtn" class="btn btn-light">
-                <i id="themeIcon" class="bi bi-brightness-high"></i>
-              </button>
-            </div>
-          </div>
-        </nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#galeria" class="nav-link">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a href="#clientes" class="nav-link">Depoimentos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicos" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+          <button id="toggleThemeBtn" class="btn btn-light me-3">
+            <i id="themeIcon" class="bi bi-brightness-high"></i>
+          </button>
+        </ul>
       </header>
+    </div>
+    <!-- Header -->
+
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary rounded"
+        aria-label="Eleventh navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample09"
+            aria-controls="navbarsExample09"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <!-- Hero -->
