@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnPrecoCasamento = document.getElementById('precoCasamento');
   const btnPrecoFeminino = document.getElementById('precoFeminino');
   const btnPrecoInfantil = document.getElementById('precoCrianca');
-  const navLi = document.querySelectorAll('.nav-item');
-  const botaoNav = document.getElementById('botaoNav');
-  const botaoCollapsed = document.querySelector('.botaoCollapsed');
+  const navUl = document.querySelector('.navUl');
 
   body.setAttribute('data-bs-theme', temaSalvo);
 
@@ -55,13 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     segTabela.style.display = 'none';
     terTabela.style.display = 'none';
   }
-
-  navLi.forEach((navLink) => {
-    navLink.addEventListener('click', () => {
-      botaoNav.setAttribute('aria-expanded', 'false');
-      botaoCollapsed.classList.remove('show');
-    });
-  });
 
   btnPrecoCasamento.addEventListener('click', () => {
     cliquePreco(casamento, feminino, infantil);

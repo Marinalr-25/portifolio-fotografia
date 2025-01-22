@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnPrecoInfantil = document.getElementById('precoCrianca');
   const navLi = document.querySelectorAll('.nav-item');
   const botaoNav = document.getElementById('botaoNav');
-  const botaoCollapsed = document.querySelector('.botaoCollapsed');
 
   body.setAttribute('data-bs-theme', temaSalvo);
 
@@ -58,8 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navLi.forEach((navLink) => {
     navLink.addEventListener('click', () => {
-      botaoNav.setAttribute('aria-expanded', 'false');
-      botaoCollapsed.classList.remove('show');
+      botaoNav.setAttribute('aria-expanded');
     });
   });
 

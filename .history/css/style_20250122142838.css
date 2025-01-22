@@ -79,7 +79,6 @@
 }
 
 /* CSS próprio */
-#home,
 #galeria,
 #sobre,
 #clientes,
@@ -166,7 +165,7 @@ form {
 
 @media (max-width: 567px) {
   form {
-    max-width: 90%;
+    max-width: 400px;
   }
 }
 
